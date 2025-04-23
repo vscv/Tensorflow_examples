@@ -61,3 +61,28 @@
 44 ConvMixer-768-32
 45 ConvMixer-1536-20
 ```
+
+
+
+```
+# hyper setting
+weight="imagenet1k" #random, maybe just 1k is enough
+crop= "crop" #"resize" #crop=center crop
+lr_name= 'CDR' #'fixed' # 'CDR' #'WCD' #'plateau'#'lrdump' #"WCD" # WCD, WCDC, lrdump, platrure
+augment= 'RA' #None # None, 'AA', 'RA', 'NoisyStudent', 'all'
+
+
+# hyper models
+top_dropout_rate = 0.4 #less dp rate, say 0.1, train_loss will lower than val_loss # for flood 0.2 is ok. for leaf 0.4 is better. for foot 0.8 is fine.
+drop_connect_rate = 0.9 #for efnet This parameter serves as a toggle for extra regularization in finetuning, but does not affect loaded weights.
+outputnum = 5 # classes of 5
+
+
+# Image size
+BATCH_SIZE = 16 #4 #32#4 #2 # 8# 32 #64 #64:512*8 OOM, B7+bs8:RecvAsync is cancelled
+img_height = 384 #512 #600 #512 #120
+img_width = 384 #512 #600 #512 #120
+
+patience_1 = 3
+patience_2 = 5
+```
