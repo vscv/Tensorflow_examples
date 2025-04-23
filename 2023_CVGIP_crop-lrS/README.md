@@ -11,6 +11,8 @@
 
 原本規劃題目是 單一模型下討論不同的Aug方法對效能的幫助 但要做K-fold 5 x aug 2~4種 訓練時間太久，原本的k-fold沒找到變成要全部重寫。所以改題目，使用先前的數據來寫，遍歷42種模型效能的測試實驗。 Comprehensive Evaluation of 42 State-of-the-Art Deep Neural Networks for Crop Disease Classification Comprehensive Evaluation of State-of-the-Art Deep Neural Networks for Crop Disease Classification
 
+![image](https://github.com/user-attachments/assets/0c6f38a7-4f17-4c01-bae0-78dee044ef00)
+
 
 ```
 # 評比模型
