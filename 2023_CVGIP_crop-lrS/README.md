@@ -10,3 +10,54 @@
 2023-06-28
 
 原本規劃題目是 單一模型下討論不同的Aug方法對效能的幫助 但要做K-fold 5 x aug 2~4種 訓練時間太久，原本的k-fold沒找到變成要全部重寫。所以改題目，使用先前的數據來寫，遍歷42種模型效能的測試實驗。 Comprehensive Evaluation of 42 State-of-the-Art Deep Neural Networks for Crop Disease Classification Comprehensive Evaluation of State-of-the-Art Deep Neural Networks for Crop Disease Classification
+
+
+```
+# 評比模型
+
+1 InceptionV3
+2 InceptionV4
+3 ResNet50
+4 ResNet101
+5 ResNet152
+6 MobileNet
+7 MobileNetV2
+8 MobileNetV3Small
+9 MobileNetV3Large
+10 DenseNet121
+11 DenseNet169
+12 DenseNet201
+13 NASNetMobile
+14 NASNetLarge
+15 EfficientNetB0
+16 EfficientNetB1
+17 EfficientNetB2
+18 EfficientNetB3
+19 EfficientNetB4
+20 EfficientNetB5
+21 EfficientNetB6
+22 EfficientNetB7
+23 EfficientNetV2B0
+24 EfficientNetV2B1
+25 EfficientNetV2B2
+26 EfficientNetV2B3
+27 EfficientNetV2S
+28 EfficientNetV2M
+29 EfficientNetV2L
+30 VGG16
+31 VGG19
+32 ViT-B8
+33 ViT-B16
+34 ViT-B32
+35 ViT-S16
+36 ViT-L16
+37 Mixer-B16
+38 Mixer-L16
+39 BiT-S-R50x1
+40 BiT-S-R50x3
+41 BiT-S-R101x1
+42 BiT-S-R101x3
+43 ConvMixer-1024-20
+44 ConvMixer-768-32
+45 ConvMixer-1536-20
+```
