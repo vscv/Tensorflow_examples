@@ -1104,7 +1104,7 @@ def build_tf_hub_models(model_name, outputnum, img_height, img_width):
 
         # Compile new model
         model.compile(
-            optimizer = tf.keras.optimizers.Adam(learning_rate=0.00001),
+            optimizer = tf.keras.optimizers.Adam(learning_rate=0.0001), #0.001 for all V2B3 but 768-K0,2 0.0001
             loss=tf.losses.SparseCategoricalCrossentropy(from_logits=False),
             metrics=['accuracy']
             )
@@ -1965,7 +1965,7 @@ def build_efn_model(weight, model_name, outputnum, img_height, img_width, top_dr
         model = tf.keras.Model(inputs, outputs, name=model_name)
 
     
-        model.compile(optimizer = tf.keras.optimizers.Adam(learning_rate=0.00001),#0.00001 for [plateau] keep same as WCD and CDR's INIT_LR. #0.0001 1e-4 #RMSprop , Adam, SGD Adadelta(learning_rate=0.001), if set lr_callback the learning_rate=0.001 will not effeced.
+        model.compile(optimizer = tf.keras.optimizers.Adam(learning_rate=0.001),#0.00001 for [plateau] keep same as WCD and CDR's INIT_LR. #0.0001 1e-4 #RMSprop , Adam, SGD Adadelta(learning_rate=0.001), if set lr_callback the learning_rate=0.001 will not effeced.
                 loss=tf.losses.SparseCategoricalCrossentropy(from_logits=False),
                  metrics=['accuracy'])
     
