@@ -1,0 +1,12 @@
+item {
+ id: 1
+ name: 'point'
+}
+item {
+ id: 2
+ name: 'line'
+}
+item {
+ id: 3
+ name: 'bright dot'
+}
