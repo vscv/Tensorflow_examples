@@ -32,7 +32,7 @@ Usage: import the module (see Jupyter notebooks for examples), or run from
 
 Usage:
 
-time python3 flood_river.py train --dataset=/home/u3148947/data/flood_river/ --weights=imagenet
+time python3 flood_river.py train --dataset=/home/uu/data/flood_river/ --weights=imagenet
 
 """
 
@@ -131,7 +131,7 @@ class BalloonDataset(utils.Dataset):
         name_dict = {"bridge":1, "flood":2, "riverbed":3}
         for item in annotations['assets']:
             image_id = annotations['assets'][item]['asset']['name']
-            path = '/home/u3148947/data/flood_river/' + image_id
+            path = '/home/uu/data/flood_river/' + image_id
             width = annotations['assets'][item]['asset']['size']['width']
             height = annotations['assets'][item]['asset']['size']['height']
                         
