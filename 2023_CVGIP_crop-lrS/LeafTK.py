@@ -1623,10 +1623,10 @@ def build_efn_model(weight, model_name, outputnum, img_height, img_width, top_dr
 #        base_model = BaseCnn(include_top=False, weights=None, input_shape=(img_height, img_width, 3))
 #
 #        # forgote where got it@@
-#        #base_model.load_weights('/home/u3148947/.keras/models/nasnet_mobile_no_top.h5') # If no load_weights, model.fit will take very long long time for initial when into the epoch 1.
+#        #base_model.load_weights('/home/uu/.keras/models/nasnet_mobile_no_top.h5') # If no load_weights, model.fit will take very long long time for initial when into the epoch 1.
 #
 #        #NASNet-mobile-no-top.h5 https://github.com/fchollet/deep-learning-models/releases/ #same as above, epoch 2 loss nan
-#        base_model.load_weights('/home/u3148947/.keras/models/NASNet-mobile-no-top.h5') # If no load_weights, model.fit will take very long long time for initial when into the epoch 1.
+#        base_model.load_weights('/home/uu/.keras/models/NASNet-mobile-no-top.h5') # If no load_weights, model.fit will take very long long time for initial when into the epoch 1.
 #
 #
 ##         inputs = tf.keras.layers.Resizing(224, 224) # tf >= 2.6.0, but currnet TWCC newest 21.08 is tf=2.5.0
@@ -1638,7 +1638,7 @@ def build_efn_model(weight, model_name, outputnum, img_height, img_width, top_dr
 #            input_shape=(img_height, img_width, 3), include_top=False,
 #            weights=None, input_tensor=None, pooling=None,
 #            )
-#        base_model.load_weights('/home/u3148947/.keras/models/nasnet_mobile_no_top.h5')
+#        base_model.load_weights('/home/uu/.keras/models/nasnet_mobile_no_top.h5')
 #        rescaling_input = tf.keras.applications.nasnet.preprocess_input(inputs)
 
 
@@ -1656,7 +1656,7 @@ def build_efn_model(weight, model_name, outputnum, img_height, img_width, top_dr
 #
 #        # load weight by hand.
 #        base_model = BaseCnn(include_top=False, weights=None, input_shape=(img_height, img_width, 3))
-#        base_model.load_weights('/home/u3148947/.keras/models/nasnet_large_no_top.h5')
+#        base_model.load_weights('/home/uu/.keras/models/nasnet_large_no_top.h5')
         base_model=tf.keras.applications.nasnet.NASNetLarge(include_top=False, weights=weight)
         resize_input = resize_layer_331(inputs)
         rescaling_input = tf.keras.applications.nasnet.preprocess_input(resize_input)
