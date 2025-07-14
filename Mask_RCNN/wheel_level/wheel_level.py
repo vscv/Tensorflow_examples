@@ -32,7 +32,7 @@ Usage: import the module (see Jupyter notebooks for examples), or run from
 
 Usage:
 
-time python3 flood_river.py train --dataset=/home/u3148947/data/flood_river/ --weights=imagenet
+time python3 flood_river.py train --dataset=/home/uu/data/flood_river/ --weights=imagenet
 
 """
 
@@ -41,8 +41,8 @@ time python3 flood_river.py train --dataset=/home/u3148947/data/flood_river/ --w
 [2021-04-23] 補充access deep sensing論文中水位高度的第二種估算方法 mask rcnn water level
 複製一份flood_river--> tire --> wheel_water_level
 
-time python3 wheel_level.py train --dataset=/home/u3148947/data/wheel_level/ --weights=imagenet #也是不ㄒㄧㄥ
-time python3 wheel_level.py train --dataset=/home/u3148947/data/wheel_level/ --weights=coco #error
+time python3 wheel_level.py train --dataset=/home/uu/data/wheel_level/ --weights=imagenet #也是不ㄒㄧㄥ
+time python3 wheel_level.py train --dataset=/home/uu/data/wheel_level/ --weights=coco #error
 
 
  99/100 [============================>.] - ETA: 0s - loss: 0.1913 - rpn_class_loss: 0.0023 - rpn_bbox_loss: 0.0308 - mrcnn_class_loss: 0.0271 - mrcnn_bbox_loss: 0.0243 - mrcnn_mask_loss: 0.1068Traceback (most recent call last):
@@ -50,7 +50,7 @@ time python3 wheel_level.py train --dataset=/home/u3148947/data/wheel_level/ --w
     train(model)
   File "wheel_level.py", line 229, in train
     layers='heads')
-  File "/home/u3148947/twcc_gpfs/MaskRCNN/Mask_RCNN/mrcnn/model.py", line 2377, in train
+  File "/home/uu/twcc_gpfs/MaskRCNN/Mask_RCNN/mrcnn/model.py", line 2377, in train
     use_multiprocessing=True,
   File "/usr/local/lib/python3.6/dist-packages/keras/legacy/interfaces.py", line 91, in wrapper
     return func(*args, **kwargs)
@@ -94,12 +94,12 @@ if 'session' in locals() and session is not None:
 
 
 
-sftp://xdata1.twcc.ai/home/u3148947/twcc_gpfs/MaskRCNN/Mask_RCNN/logs/wheel_level20210423T1444/mask_rcnn_wheel_level_0003.h5
-sftp://xdata1.twcc.ai/home/u3148947/twcc_gpfs/MaskRCNN/Mask_RCNN/samples/wheel_level/test_img/1.jpg
+sftp://xdata1.twcc.ai/home/uu/twcc_gpfs/MaskRCNN/Mask_RCNN/logs/wheel_level20210423T1444/mask_rcnn_wheel_level_0003.h5
+sftp://xdata1.twcc.ai/home/uu/twcc_gpfs/MaskRCNN/Mask_RCNN/samples/wheel_level/test_img/1.jpg
 
 
 沒用
-time python3 wheel_level.py splash --weights=/home/u3148947/twcc_gpfs/MaskRCNN/Mask_RCNN/logs/wheel_level20210423T1444/mask_rcnn_wheel_level_0003.h5 --image=/home/u3148947/twcc_gpfs/MaskRCNN/Mask_RCNN/samples/wheel_level/test_img/1.jpg
+time python3 wheel_level.py splash --weights=/home/uu/twcc_gpfs/MaskRCNN/Mask_RCNN/logs/wheel_level20210423T1444/mask_rcnn_wheel_level_0003.h5 --image=/home/uu/twcc_gpfs/MaskRCNN/Mask_RCNN/samples/wheel_level/test_img/1.jpg
 
 用
 detect-wheel_level.ipynb
@@ -205,7 +205,7 @@ class BalloonDataset(utils.Dataset):
         name_dict = {"tire":1}
         for item in annotations['assets']:
             image_id = annotations['assets'][item]['asset']['name']
-            path = '/home/u3148947/data/wheel_level/' + image_id
+            path = '/home/uu/data/wheel_level/' + image_id
             width = annotations['assets'][item]['asset']['size']['width']
             height = annotations['assets'][item]['asset']['size']['height']
                         
