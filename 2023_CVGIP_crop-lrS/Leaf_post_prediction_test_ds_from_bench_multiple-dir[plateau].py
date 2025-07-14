@@ -162,8 +162,8 @@ img_width = 512 #600 #512 #120
 # batch size for multi gpu #
 MULTI_BATCH_SIZE = BATCH_SIZE  # * strategy.num_replicas_in_sync
 
-data_dir = '/home/u3148947/.keras/datasets/leaf/'
-leaf_dir = '/home/u3148947/.keras/datasets/leaf/train_images/'
+data_dir = '/home/uu/.keras/datasets/leaf/'
+leaf_dir = '/home/uu/.keras/datasets/leaf/train_images/'
 
 df_train = pd.read_csv(data_dir + '/train.csv')
 
