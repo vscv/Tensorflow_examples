@@ -350,14 +350,14 @@ LABELS = {"0": "CBB",
           "3": "CMD", 
           "4": "Healthy"}
 
-#data_dir = '/home/u3148947/.keras/datasets/leaf/'
-#leaf_dir = '/home/u3148947/.keras/datasets/leaf/train_images/'
+#data_dir = '/home/uu/.keras/datasets/leaf/'
+#leaf_dir = '/home/uu/.keras/datasets/leaf/train_images/'
 #
 #df_train = pd.read_csv(data_dir + '/train.csv')
 
 
-data_dir = "/home/u3148947/data/CropLandImage/"
-leaf_dir = "/home/u3148947/data/CropLandImage/img_org/"
+data_dir = "/home/uu/data/CropLandImage/"
+leaf_dir = "/home/uu/data/CropLandImage/img_org/"
 
 #df_train = pd.read_csv(data_dir + '/train_CropLand_label2int_list_.csv') # using label to int.
 df_train = pd.read_csv(data_dir + '/train_CropLand_label2int_list_img800x.csv') # using label to int.
