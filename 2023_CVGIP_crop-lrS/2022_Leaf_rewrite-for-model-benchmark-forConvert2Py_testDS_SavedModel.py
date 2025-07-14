@@ -244,8 +244,8 @@ LABELS = {"0": "CBB",
           "3": "CMD", 
           "4": "Healthy"}
 
-data_dir = '/home/u3148947/.keras/datasets/leaf/'
-leaf_dir = '/home/u3148947/.keras/datasets/leaf/train_images/'
+data_dir = '/home/uu/.keras/datasets/leaf/'
+leaf_dir = '/home/uu/.keras/datasets/leaf/train_images/'
 
 df_train = pd.read_csv(data_dir + '/train.csv')
 
