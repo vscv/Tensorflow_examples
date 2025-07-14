@@ -277,11 +277,11 @@ LABELS = {0: 'banana',
          13: 'tomato'}
 
 
-#data_dir = "/home/u3148947/data/CropLandImage/"
-#leaf_dir = "/home/u3148947/data/CropLandImage/img_org/"
+#data_dir = "/home/uu/data/CropLandImage/"
+#leaf_dir = "/home/uu/data/CropLandImage/img_org/"
 
-data_dir = "/home/u3148947/data/CropLandImage/"
-test_dir = "/home/u3148947/data/CropLandImage/testset/"
+data_dir = "/home/uu/data/CropLandImage/"
+test_dir = "/home/uu/data/CropLandImage/testset/"
 
 #df_train = pd.read_csv(data_dir + '/train_CropLand_label2int_list_.csv') # using label to int.
 df_test = pd.read_csv(data_dir + '/submission_example.csv') # using label to int.
