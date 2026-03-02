@@ -18,7 +18,7 @@ https://github.com/PaddlePaddle/PaddleDetection/tree/develop/configs/rtdetr
 """
 
 安裝在虛擬空間
-/home/u3148947/2023-07-31_PaddleDetection
+/home/USER/2023-07-31_PaddleDetection
 python3 -m venv ppdet
 source ppdet/bin/activate
 
